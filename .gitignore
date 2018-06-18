@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#we will skip the maildir folder now after we run the startup script
+maildir/*
