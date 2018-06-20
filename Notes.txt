@@ -1,0 +1,4 @@
+
+Jun 20, 2018
+Topic - Decision Trees
+1. Entropy - Measure of impurity in a set of examples. Generally the opposite of purity.
