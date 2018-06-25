@@ -105,6 +105,9 @@ venv.bak/
 
 #we will skip the maildir folder now after we run the startup script
 maildir/*
+
+*.tar.gz
+
 *.pyc
 enron_mail_20110402.tgz
 enron_mail_20110402/
