@@ -37,7 +37,7 @@ def m2():
         break
     print(str(i))
 
-def m2():
+def m3():
     """getting the number of POIs in the corpus """
     enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
     i = 0
@@ -47,5 +47,24 @@ def m2():
             i += 1
     print(str(i))
 
+def m4():
+    enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
+    for employee in enron_data:
+        if "PRENTICE" in employee:
+            print(enron_data[employee])
+
+def m5():
+    enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
+    for employee in enron_data:
+        if "COLWELL" in employee:
+            print(enron_data[employee]["from_this_person_to_poi"])
+
+def m6():
+    enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
+    for employee in enron_data:
+        if "SKILLING" in employee:
+            print(enron_data[employee])
+
+
 if __name__ == "__main__":
-    m2()
+    m6()
