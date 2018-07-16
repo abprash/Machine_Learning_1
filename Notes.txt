@@ -2,3 +2,36 @@
 Jun 20, 2018
 Topic - Decision Trees
 1. Entropy - Measure of impurity in a set of examples. Generally the opposite of purity.
+
+Jul 15, 2018
+Topic - Regressions
+1. So far we saw outputs being restricted to binary values (fast/ slow, light/heavy etc.) but now we will be dealing with continuous values - like, with increase in height, the weight also increases.
+2. Here the output is continuous - hence called Continuous Supervised Learning.
+3. Be clear, the output is now continuous. the input was continuous all along, and there are no changes there.
+4. You do regressions when you have to predict continuous output values.
+
+```
+Linear Regression Example
+
+from sklearn import linear_model
+reg = linear_model.LinearRegression()
+reg.fit(ages_train, net_worth_train)
+reg.predict(ages_test) # ages_test -> [25,1,44,...]
+# we can get the slope and y-intercept by
+intercept = reg.intercept_
+slope = reg.slope_
+
+```
+
+How to measure the effectiveness of the regression model which we just saw now?
+1. R-squared score
+```
+# r sq score on test data
+reg.score(ages_test, net_worth_test)
+```
+2. Sum of errors
+3. General way to evaluate - ` error = actual value - predicted value`.
+
+There are various algorithms that are there which minimize the sum of the squared error
+  1. Ordinary Least Squares - OLS
+  2. Gradient Descent
